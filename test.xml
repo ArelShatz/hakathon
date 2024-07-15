@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope">
+<env:Header/>
+<env:Body>
+<ns3:alert xmlns:ns2="http://evigilo.net/osb.nationalalert.hfc.idf.osb.coherence" xmlns:ns3="urn:oasis:names:tc:emergency:cap:1.2" xmlns:ns4="http://evigilo.net/osb.nationalalert.hfc.idf.parameters">
+<ns3:identifier>1676a0ac-1a54-4e5b-8081-6b8d38107c23</ns3:identifier>
+<ns3:sender>marganit.masal.idf</ns3:sender>
+<ns3:sent>2024-05-23T16:25:40+03:00</ns3:sent>
+<ns3:status>Exercise</ns3:status>
+<ns3:msgType>Update</ns3:msgType>
+<ns3:scope>Public</ns3:scope>
+<ns3:restriction>2</ns3:restriction>
+<ns3:incidents>1716470729536</ns3:incidents>
+<ns3:info>
+<ns3:category>Other</ns3:category>
+<ns3:event>Kill</ns3:event>
+<ns3:urgency>Immediate</ns3:urgency>
+<ns3:severity>Extreme</ns3:severity>
+<ns3:certainty>Observed</ns3:certainty>
+<ns3:audience>new.simulator.idf</ns3:audience>
+<ns3:eventCode>
+<ns3:valueName>SourceSender</ns3:valueName>
+<ns3:value>marganit.masal.idf</ns3:value>
+</ns3:eventCode>
+<ns3:expires>2024-05-23T16:26:10+03:00</ns3:expires>
+<ns3:parameter>
+<ns3:valueName>AlertID</ns3:valueName>
+<ns3:value>606a5784-8e0f-4204-92c3-9495ebf22f64</ns3:value>
+</ns3:parameter>
+<ns3:area>
+<ns3:areaDesc>CITIES</ns3:areaDesc>
+<ns3:geocode>
+<ns3:valueName>CRS</ns3:valueName>
+<ns3:value>ESPG:4326</ns3:value>
+</ns3:geocode>
+<ns3:geocode>
+<ns3:valueName>Areas</ns3:valueName>
+<ns3:value>587,1794</ns3:value>
+</ns3:geocode>
+</ns3:area>
+</ns3:info>
+</ns3:alert>
+</env:Body>
+</env:Envelope>
