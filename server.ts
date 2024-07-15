@@ -4,7 +4,6 @@ import express from 'express';
 import {Request, Response} from 'express';
 const { createServer } = require('node:http');
 const { Server } = require('socket.io');
-//const postgres = require('./postgres-config');
 const { getIdsXml } = require('./xml-parser');
 const cors = require('cors');
 import { myDataSource } from "./datasource";
@@ -29,7 +28,7 @@ myDataSource
     .then(() => {
         console.log("Data Source has been initialized!")
     })
-    .catch((err) => {
+    .catch((err: any) => {
         console.error("Error during Data Source initialization:", err)
     })
 
@@ -69,7 +68,7 @@ ioServer.on('connection', (socket: typeof Socket) => {
             socket.join(room);
 
             socket.on('ids-request', () => {
-                ioServer.to('alerts').emit('ids', currentIds);
+                setInterval(() => ioServer.to('alerts').emit('ids', currentIds), 1000);
             })
         }
     })
