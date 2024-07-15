@@ -7,8 +7,8 @@ const { Server } = require('socket.io');
 //const postgres = require('./postgres-config');
 const { getIdsXml } = require('./xml-parser');
 const cors = require('cors');
-import { myDataSource } from "./datasource.ts";
-import { Polygon } from './polygon.entity.js';
+import { myDataSource } from "./datasource";
+import { Polygon } from './polygon.entity';
 
 let currentIds: number[] = [];
 
